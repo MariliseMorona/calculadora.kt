@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">calculadora.kt</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_amount_invested">Enter The Amount Invested In Reals</string>
+    <string name="reals_figures">R$</string>
+    <string name="text_return_projectionI">The Return Projection In Maximun People Is:</string>
+</resources>

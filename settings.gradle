@@ -1,0 +1,2 @@
+rootProject.name = "calculadora.kt"
+include ':app'
