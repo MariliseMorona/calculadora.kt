@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CalculatorFragment"
+    style="@style/linearBox">
+
+    <TextView
+        android:id="@+id/txt_enterTheAmountInvestedInReals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textBox"
+        android:text="@string/text_amount_invested" />
+
+    <EditText
+        android:id="@+id/edt_insertTheValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:digits="0123456789.,"
+        style="@style/textBox"
+        android:hint="@string/reals_figures"
+        tools:text="R$ 1.000,00"/>
+
+    <TextView
+        android:id="@+id/txt_returnProjectionInMaximunPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textBox"
+        android:text="@string/text_return_projectionI" />
+
+    <EditText
+        android:id="@+id/edt_valueReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textBox"
+        tools:text="Value return" />
+
+    <Button
+        android:id="@+id/btn_calcule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/text_calculate"
+        style="@style/btn_default"
+        android:background="@drawable/background_btn"
+        tools:ignore="OnClick" />
+</LinearLayout>
