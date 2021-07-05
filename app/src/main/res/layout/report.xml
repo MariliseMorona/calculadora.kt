@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_report"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Relatório"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <TextView
+        android:id="@+id/txt_name_client"
+        style="@style/editBox"
+        android:text="@string/text_client"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_name_add_item"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/edt_name_add_item" />
+
+    <TextView
+        android:id="@+id/edt_name_add_item"
+        style="@style/editBox"
+        android:hint="@string/text_client"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@id/tlb_report"
+        app:layout_constraintBottom_toTopOf="@id/edt_ad_add_item"/>
+
+    <TextView
+        android:id="@+id/txt_name_ad"
+        style="@style/editBox"
+        android:text="@string/text_ad_name"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_ad_add_item"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/edt_ad_add_item" />
+
+    <TextView
+        android:id="@+id/edt_ad_add_item"
+        style="@style/editBox"
+        android:hint="@string/text_hint_ad_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name_add_item"
+        app:layout_constraintBottom_toTopOf="@id/edt_amount_invested_day_add"/>
+
+    <TextView
+        android:id="@+id/txt_amount_invested_day"
+        style="@style/editBox"
+        android:text="@string/text_amount_invested_day"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_amount_invested_day_add"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/edt_amount_invested_day_add" />
+
+    <TextView
+        android:id="@+id/edt_amount_invested_day_add"
+        style="@style/editBox"
+        android:hint="@string/reals_figures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edt_ad_add_item"
+        app:layout_constraintBottom_toTopOf="@id/output_period"/>
+
+    <TextView
+        android:id="@+id/txt_period"
+        style="@style/editBox"
+        android:text="@string/text_periodo_anuncio"
+        app:layout_constraintBottom_toBottomOf="@+id/output_period"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/output_period" />
+
+    <TextView
+        android:id="@+id/output_period"
+        style="@style/editBox"
+        android:hint="@string/hint_periodo_dias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edt_amount_invested_day_add"
+        app:layout_constraintBottom_toTopOf="@id/output_max_views"/>
+
+    <TextView
+        android:id="@+id/txt_max_views"
+        style="@style/editBox"
+        android:text="@string/text_views_reports"
+        app:layout_constraintBottom_toBottomOf="@+id/output_max_views"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/output_max_views" />
+
+    <TextView
+        android:id="@+id/output_max_views"
+        style="@style/editBox"
+        android:hint="@string/hint_periodo_dias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/output_period"
+        app:layout_constraintBottom_toTopOf="@id/output_max_clicks"/>
+
+    <TextView
+        android:id="@+id/txt_max_clicks"
+        style="@style/editBox"
+        android:text="@string/text_max_clicks"
+        app:layout_constraintBottom_toBottomOf="@+id/output_max_clicks"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/output_max_clicks" />
+
+    <TextView
+        android:id="@+id/output_max_clicks"
+        style="@style/editBox"
+        android:hint="@string/hint_max_clicks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/output_max_views"
+        app:layout_constraintBottom_toTopOf="@id/output_max_share"/>
+
+    <TextView
+        android:id="@+id/output_max_share_calculator"
+        style="@style/editBox"
+        android:text="@string/text_max_share"
+        app:layout_constraintBottom_toBottomOf="@+id/output_max_share"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/output_max_share" />
+
+    <TextView
+        android:id="@+id/output_max_share"
+        style="@style/editBox"
+        android:hint="@string/hint_max_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/output_max_clicks"
+        app:layout_constraintBottom_toTopOf="@id/output_amount_invested"/>
+
+    <TextView
+        android:id="@+id/txt_amount_invested"
+        style="@style/editBox"
+        android:text="@string/text_amount_invested"
+        app:layout_constraintBottom_toBottomOf="@+id/output_amount_invested"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/output_amount_invested" />
+
+    <TextView
+        android:id="@+id/output_amount_invested"
+        style="@style/editBox"
+        android:hint="@string/reals_figures"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/output_max_share" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

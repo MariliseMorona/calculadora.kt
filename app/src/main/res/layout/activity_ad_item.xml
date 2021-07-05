@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_16dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <TextView
+        android:id="@+id/txt_name_client"
+        style="@style/editBox"
+        android:text="@string/text_client"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_name_add_item"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_name_add_item" />
+
+    <EditText
+        android:id="@+id/edt_name_add_item"
+        style="@style/editBox"
+        android:hint="@string/text_client"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edt_ad_add_item"/>
+
+    <TextView
+        android:id="@+id/txt_name_ad"
+        style="@style/editBox"
+        android:text="@string/text_ad_name"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_ad_add_item"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_ad_add_item" />
+
+    <EditText
+        android:id="@+id/edt_ad_add_item"
+        style="@style/editBox"
+        android:hint="@string/text_hint_ad_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name_add_item"
+        app:layout_constraintBottom_toTopOf="@+id/edt_amount_invested_day_add"/>
+
+    <TextView
+        android:id="@+id/txt_amount_invested_day"
+        style="@style/editBox"
+        android:text="@string/text_amount_invested_day"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_amount_invested_day_add"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_amount_invested_day_add" />
+
+    <EditText
+        android:id="@+id/edt_amount_invested_day_add"
+        style="@style/editBox"
+        android:hint="@string/reals_figures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edt_ad_add_item"
+        app:layout_constraintBottom_toTopOf="@id/txt_input_date"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txt_input_date"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:hint="@string/select_date"
+        app:layout_constraintBottom_toTopOf="@+id/btn_save"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/edt_amount_invested_day_add"
+        app:startIconDrawable="@drawable/ic_baseline_calendar_today_24" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_8dp"
+        android:text="@string/text_btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,38 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".view.MainActivity">
+    android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlb_calculator"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.Calculadorakt.AppBarOverlay">
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/tlb_calculator"/>
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_32dp"/>
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdl_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_32dp"/>
+
+    <TextView
+        android:id="@+id/txt_amount_invested"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:text="@string/text_amount_invested"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_calculate"
+        app:layout_constraintEnd_toEndOf="@id/gdl_end"
+        app:layout_constraintStart_toStartOf="@+id/gdl_start"
+        app:layout_constraintTop_toBottomOf="@+id/tlb_calculator"
+        app:layout_constraintVertical_bias="0.236">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_total_amount_invested_calculator"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:hint="@string/reals_figures"
+        app:layout_constraintStart_toStartOf="@+id/gdl_start"
+        app:layout_constraintEnd_toEndOf="@id/gdl_end"
+        app:layout_constraintTop_toBottomOf="@+id/txt_amount_invested">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
-    </com.google.android.material.appbar.AppBarLayout>
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <TextView
+        android:id="@+id/txt_projection"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:hint="@string/text_return_projection"
+        app:layout_constraintStart_toStartOf="@+id/gdl_start"
+        app:layout_constraintEnd_toEndOf="@id/gdl_end"
+        app:layout_constraintTop_toBottomOf="@+id/edt_total_amount_invested_calculator">
+
+    </TextView>
+    <TextView
+        android:id="@+id/output_max_share_calculator"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:hint="@string/text_return_shares"
+        app:layout_constraintStart_toStartOf="@+id/gdl_start"
+        app:layout_constraintEnd_toEndOf="@id/gdl_end"
+        app:layout_constraintTop_toBottomOf="@+id/txt_projection">
+
+    </TextView>
 
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_calculate"
+        android:layout_margin="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gdl_end"
+        app:layout_constraintStart_toStartOf="@+id/gdl_start" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

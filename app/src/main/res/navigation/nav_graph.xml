@@ -7,12 +7,12 @@
 
     <activity
         android:id="@+id/mainActivity"
-        android:name="com.example.calculadorakt.view.MainActivity"
+        android:name="com.example.calculadorakt.ui.view.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/calculatorFragment"
-        android:name="com.example.calculadorakt.view.CalculatorFragment"
+        android:name="com.example.calculadorakt.ui.view.CalculatorFragment"
         android:label="fragment_calculator"
         tools:layout="@layout/fragment_calculator" />
 </navigation>

@@ -1,18 +1,43 @@
 <resources>
     <string name="app_name">calculadora.kt</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="tab1_title">Calculator</string>
+    <string name="tlb_calculator">Calculator</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="text_amount_invested">Enter The Amount Invested In Reals</string>
+    <string name="text_amount">Enter The Amount Invested In Reals</string>
     <string name="reals_figures">R$</string>
-    <string name="text_return_projectionI">The Return Projection In Maximun People Is:</string>
-    <string name="tab2_title">Report</string>
-    <string name="text_ad_name">Ad name:</string>
-    <string name="text_hint_client">TextView</string>
+    <string name="text_return_projection">The Return Projection In Maximun People Is:</string>
+    <string name="tlb_report">Report</string>
+    <string name="text_ad_name">Anúncio:</string>
+    <string name="text_hint_client">Nome do cliente</string>
     <string name="text_hint_investment_day">R$</string>
     <string name="text_calendar">Select the ad delivery period:</string>
-    <string name="text_client">Client:</string>
-    <string name="text_hint_ad_name">Ad name</string>
+    <string name="text_client">Cliente:</string>
+    <string name="text_hint_ad_name">Nome do anúncio</string>
     <string name="text_calculate">Calcule</string>
+    <string name="tab3_title">List Reports</string>
+    <string name="text_search_title">Pesquisar</string>
+    <string name="text_input_date">Data</string>
+    <string name="text_return_shares">Compartilhamentos</string>
+    <string name="text_amount_invested_day">Investimento (dia):</string>
+    <string name="text_return_amount">Investimento:</string>
+    <string name="text_click_reports">Clicks (máximo):</string>
+    <string name="text_share_reports">Compartilhamentos (máximo):</string>
+    <string name="text_views_reports">Views (máximo):</string>
+    <string name="text_no_ad_registered">Nenhum anúncio registrado !</string>
+    <string name="fbt_insert_add">Insira anúncio</string>
+    <string name="btn_menu_adicionar">Adicionar</string>
+    <string name="btn_menu_delete">Deletar</string>
+    <string name="select_date">Data</string>
+    <string name="text_periodo_anuncio">Período de anúncio:</string>
+    <string name="hint_periodo_dias">Período em dias</string>
+    <string name="text_max_clicks">N° máximo de cliques:</string>
+    <string name="hint_max_clicks">Cliques</string>
+    <string name="text_max_share">N° máximo de compartilhamentos:</string>
+    <string name="hint_max_share">Compartilhamentos</string>
+    <string name="text_amount_invested">Total investido:</string>
+    <string name="text_btn_save">Salvar</string>
+    <string name="btn_menu_edit">Editar</string>
+    <string name="btn_menu_open">Abrir</string>
+
 
 </resources>

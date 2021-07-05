@@ -14,4 +14,30 @@
         <item name="android:layout_margin">@dimen/dimen_16dp</item>
                <item name="android:gravity">center</item>
     </style>
+
+    <style name="btn_default">
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="reports_item">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/dimen_24sp</item>
+        <item name="android:layout_margin">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="editBox">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_32dp</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+
 </resources>
